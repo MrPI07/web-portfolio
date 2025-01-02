@@ -16,3 +16,29 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     }
   });
   
+// Seleccionar el botón de apertura, el botón de cierre y el menú
+const menuToggle = document.querySelector('.menu-toggle');
+const menuClose = document.querySelector('.menu-close');
+const navbar = document.querySelector('.navbar');
+
+// Agregar un evento al botón para abrir/cerrar el menú
+menuToggle.addEventListener('click', () => {
+  navbar.classList.toggle('active'); // Alternar la clase "active" para mostrar/ocultar el menú
+});
+
+// Función para mostrar el menú
+menuToggle.addEventListener('click', () => {
+  navbar.classList.add('active');
+});
+
+// Función para cerrar el menú
+menuClose.addEventListener('click', () => {
+  navbar.classList.remove('active');
+});
+
+// Opcional: Cerrar el menú al hacer clic en un enlace
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+});
