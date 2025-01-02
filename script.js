@@ -22,14 +22,14 @@ const menuClose = document.querySelector('.menu-close');
 const navbar = document.querySelector('.navbar');
 
 // Agregar un evento al botón para abrir/cerrar el menú
-/*menuToggle.addEventListener('click', () => {
+menuToggle.addEventListener('click', () => {
   navbar.classList.toggle('active'); // Alternar la clase "active" para mostrar/ocultar el menú
-});*/
+});
 
 // Función para mostrar el menú
-menuToggle.addEventListener('click', () => {
+/*menuToggle.addEventListener('click', () => {
   navbar.classList.add('active');
-});
+});*/
 
 // Función para cerrar el menú
 menuClose.addEventListener('click', () => {
