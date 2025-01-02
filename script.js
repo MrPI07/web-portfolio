@@ -15,8 +15,10 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
       alert("Por favor, completa todos los campos.");
     }
   });
-  
-/*// Seleccionar el botón de apertura, el botón de cierre y el menú
+
+
+
+// Seleccionar el botón de apertura, el botón de cierre y el menú
 const menuToggle = document.querySelector('.menu-toggle');
 const menuClose = document.querySelector('.menu-close');
 const navbar = document.querySelector('.navbar');
@@ -34,29 +36,6 @@ menuToggle.addEventListener('click', () => {
 // Función para cerrar el menú
 menuClose.addEventListener('click', () => {
   navbar.classList.remove('active');
-});*/
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Seleccionar los elementos después de que el DOM se haya cargado
-  const menuToggle = document.querySelector('.menu-toggle');
-  const menuClose = document.querySelector('.menu-close');
-  const navbar = document.querySelector('.navbar');
-
-  if (menuToggle && menuClose && navbar) {
-    menuToggle.addEventListener('click', () => {
-      navbar.classList.add('active');
-    });
-
-    menuClose.addEventListener('click', () => {
-      navbar.classList.remove('active');
-    });
-
-    document.querySelectorAll('.navbar a').forEach(link => {
-      link.addEventListener('click', () => {
-        navbar.classList.remove('active');
-      });
-    });
-  }
 });
 
 // Opcional: Cerrar el menú al hacer clic en un enlace
